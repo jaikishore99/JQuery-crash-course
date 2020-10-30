@@ -1,0 +1,162 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQ-part-2</title>
+    <script src="jquery.min.js"></script>
+    <script src="jquery-ui-1.12.1/jquery-ui/jquery-ui.js"></script>
+    <link href="jquery-ui-1.12.1/jquery-ui/jquery-ui.css" rel="stylesheet">
+
+    <style type="text/css">
+    #jqwebsite{
+        width: 100px;
+        height: 40px;
+        border-radius: 10px;
+        border: transparent;
+        background-color: red;
+        font-weight: bold;
+    }
+    #jqwebsite:hover {
+        width: 100px;
+        height: 40px;
+        border-radius: 10px;
+        border: transparent;
+        background-color:lightseagreen;
+        font-weight: bold;
+    }
+    .boxin{
+        width: 400px;
+        height: 400px;
+        background-color: yellowgreen;
+        margin: 0;
+        padding: 0;
+    }
+    #resize1{
+        width: 200px;
+        height: 200px;
+        background-color:blue ;
+    }
+    #resize2{
+        width: 200px;
+        height: 200px;
+        background-color:teal;
+    }
+    #drop{
+        width: 200px;
+        height: 200px;
+        background-color:maroon;
+    }
+    #drag-drop{
+        width: 100px;
+        height: 100px;
+        background-color:green;
+    }
+    
+    
+    
+    </style>
+</head>
+<body>
+    ///////////////////////part 2 JQ-UI///////////////////////////////
+    <br><hr>
+    To learn more about jq <a href="https://jqueryui.com/" target="_blank" ><button id="jqwebsite">JQ wesite</button></a><br><hr>
+    // JQ-UI //
+    <div id="draggable">
+        <p>Drag me around</p>
+    </div><br><hr>
+
+    // draggable and resizbles //
+    <p id="boxout"> iam outside the box</p>
+    <div><p class="boxin"><span id="boxin">inside the box</span></p></div>
+    <div id="resize1"></div>
+    <div id="resize2"></div>
+    <br><hr>
+     
+    // dropables //
+    <div id="drop"></div>
+    <div id="drag-drop"></div><br><hr>
+
+    // accordion & sortables //
+************************accordion*********************
+    <div id="accordion">
+        <h3>section 1</h3>
+        <div><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere iure corporis officia maxime tempora quod dicta blanditiis reprehenderit, debitis doloremque. Fuga aliquid sed fugiat minima molestiae quisquam soluta consectetur ducimus?</p></div>
+        <h3>section 2</h3>
+        <div><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur minus temporibus aperiam quia, enim illum praesentium natus quo tempora unde porro, necessitatibus totam dignissimos assumenda explicabo incidunt laudantium, tempore doloremque?</p></div>
+        <h3>section 3</h3>
+        <div><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates corporis similique itaque quibusdam nobis perferendis architecto ut quo, unde tempora harum obcaecati voluptatum repellat error culpa quam officia iure rerum?</p>
+            <ul>
+                <li>option 1</li>
+                <li>option 2</li>
+                <li>option 3</li>
+                <li>option 4</li>
+                <li>option 5</li>
+            </ul></div>
+        <h3>section 4</h3>
+        <div><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo voluptatem facilis quasi eveniet, autem sunt maiores quo, minima quis harum quam placeat doloremque? Labore provident, ipsum minus modi sunt quod.</p><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur quas molestiae nesciunt quaerat ullam tenetur. Neque eligendi explicabo provident at ab eaque deleniti porro voluptatem delectus. Sapiente consectetur reprehenderit provident?</p></div>
+    </div>
+********************sortable******************
+<ul id="sortable">
+  <li >Item 1</li>
+  <li >Item 2</li>
+  <li >Item 3</li>
+  <li >Item 4</li>
+  <li >Item 5</li>
+  <li >Item 6</li>
+  <li >Item 7</li>
+</ul><br><hr>
+//////////////////////////////////////////////////////////////////////<br>
+    //JQ codeplayer project //
+    <br>
+    it is done in seperately in folder 4.JQ
+
+
+<!----------------------------script--------------------------------------->
+    <script type="text/javascript">
+        //dragables
+        $( function() {
+            $( "#draggable" ).draggable();
+        } );
+        
+        //drag and resize
+                $( function() {
+                    $( "#boxout" ).draggable();
+                } );
+                $( function() {
+                    $( ".boxin" ).draggable();
+                    $( "#boxin" ).draggable({containment: "parent" });
+                } );
+                        $( function() {
+                            $( "#resize1" ).draggable();
+                            $( "#resize1" ).resizable();
+                            $( "#resize2" ).draggable();
+                            $("#resize2").resizable()
+                        } );
+        //remaining similar to drag and resize in off website to learn go to top and click the button
+
+        //dropables
+        $(function(){
+            $("#drag-drop").draggable()
+            $("#drop").droppable({
+                drop: function(event, ui){
+                   // alert("dropped")
+
+                }
+            })
+        })
+
+        //accordion & sortables
+        $( function() {
+            $( "#accordion" ).accordion();
+        } );
+
+        $( function() {
+            $( "#sortable" ).sortable();
+            $( "#sortable" ).disableSelection();
+         } );
+        
+    
+    </script>
+    
+</body>
+</html>

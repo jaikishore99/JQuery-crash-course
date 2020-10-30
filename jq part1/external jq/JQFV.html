@@ -1,0 +1,103 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jq up to form validation</title>
+    <link rel="stylesheet" type="text/css" href="JQFV.css">
+    <script src="jquery.min.js"></script>
+</head>
+<body>
+    ////////////////////////////////////////////////////////////////////
+    // heading //
+    <p>hi just now started jq</p>
+    <br>
+    <hr>
+    &nbsp;
+                            // detecting a click //
+    <div id="circle1"></div>
+    <div id="square1"></div>
+    <div id="square2"></div>
+    <br>
+    <hr>
+    &nbsp;
+
+                        // changing website content //
+    <div id="circle2"></div>
+    <p id="det-click">click on the red circle to change the text</p>
+    <iframe src="https://www.bbc.com/"></iframe>
+    <br>
+    <hr>
+
+                            // changing styles //
+    
+    <p id="cng-click"> this is some text . . .</p>
+    <div id="cng-style"><div id="circle3"></div>
+                        <div id="square3"></div>
+                        <div id="square4"></div></div>
+                        <br><hr>
+
+                             // fading content //
+    <p id="fadetxt">this is some text</p>
+    <button id="fadebtn-out">fade text</button>
+    <p id="fadetxt2">this will be hidden...</p>
+    <button id="fadebtn-in">hiddentxt</button>
+    <p id="toggletext">this will be hidden and display by clicking toggle button</p>
+    <button id="togglebtn">toggle button</button>
+    <br>
+    <hr>
+
+                            // animating content //
+
+    <div id="circle4"></div>
+    <br><hr>
+
+                                    // AJAX //
+
+    <p id="ajaxtxt"></p>
+    ajax needed FTP after the completion of my FTP 
+    course i will do AJAX again. for now it's pending
+    <br><hr>
+
+                            // regular expressions //
+    <p>used in script</p>
+    <br><hr>
+
+                          // form validation system //
+    <!-- basic meathod 
+    <p>Email <input type="text" placeholder="Eg:Yourmail@gmail.com"></p>
+    <p>Telephone <input type="text" placeholder="Eg:0123456789"></p>
+    <p>Password <input type="text" placeholder="XXXXXXXX"></p>
+    <p>Confirm Password <input type="text" placeholder="XXXXXXXX"></p>
+    <button id="form-signup">Signup</button>
+    -->
+    <br>
+    &nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>
+
+<div id="form-container">
+    
+    <div id="errorMessage"></div>
+    <div class="form-validation"><label for="Email">Email</label>
+                       <input type="text" name="Email" id="Email" placeholder="Eg:Yourmail@gmail.com">
+    </div>
+    <div class="form-validation"><label for="Telephone">Telephone</label>
+                       <input type="text" name="Telephone" id="Telephone" placeholder="Eg:0123456789">
+    </div>
+    <div class="form-validation"><label for="Password">Password</label>
+                       <input type="password" name="Password" id="Password" placeholder="XXXXXXXX">
+    </div>
+    <div class="form-validation"><label for="Confirm Password">Confirm Password</label>
+                       <input type="password" name="Confirm Password" id="c-Password" placeholder="XXXXXXXX">
+    </div>
+    <div class="form-validation">
+                       <input type="submit" id="submit" value="Login">&nbsp;<div id="sucessfull"> done! Login</div>
+    </div>
+</div>
+
+<br>
+&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>
+
+<hr>
+
+<script type="text/javascript" src="JQFV.js"></script>
+</body>
+</html>

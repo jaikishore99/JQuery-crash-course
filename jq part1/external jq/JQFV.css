@@ -1,0 +1,148 @@
+#circle1{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border-radius: 50px;
+    margin: 5px;
+}
+#square1{
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    margin:5px;
+}
+#square2{
+    width: 100px;
+    height: 100px;
+    background-color:green;
+    margin:5px;
+}
+
+#circle2{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border-radius: 50px;
+    margin: 5px;
+}
+
+#circle3{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border-radius: 50px;
+    margin: 5px;
+}
+#square3{
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    margin:5px;
+}
+#square4{
+    width: 100px;
+    height: 100px;
+    background-color:green;
+    margin:5px;
+}
+#fadetxt2{
+    display: none;
+}
+
+#circle4{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+body{
+    font-family:Helvetica, sans-serif;
+}
+label{
+    position: relative;
+    top: 10px;
+    width: 200px;
+    width: 150px;
+    float: left;
+}
+#Email{
+    padding: 5px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: 1px solid black;
+    width :300px;
+    margin-left: 25px;
+
+    
+}
+#Telephone{
+    padding: 5px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: 1px solid black;
+    width :300px;
+    margin-left: 25px;
+   
+}
+#Password{
+    padding: 5px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: 1px solid black;
+    width :300px;
+    margin-left: 25px;
+   
+}
+#c-Password{
+    padding: 5px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: 1px solid black;
+    width :300px;
+    margin-left: 25px;
+ 
+}
+
+#form-container{
+    width: 500px;
+    margin: 0 auto;
+}
+
+.form-validation {
+    float: left;
+    margin: 4px;
+}
+#submit{
+    padding: 5px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: 2px solid lightseagreen;
+    width :100px;
+    background-color: lightskyblue;
+    margin-left: 175px;
+}
+
+#submit:hover{
+    padding: 5px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: 2px solid rgb(184, 50, 50);
+    width :100px;
+    background-color:lightcoral ;
+    margin-left: 175px;
+
+}
+
+#errorMessage{
+    color: red;
+    font-size: 90% !important;
+}
+#sucessfull{
+    color: rgb(8, 87, 8);
+    font-size: 90% !important;
+    display: none;
+    margin-left: 390px;
+    margin-bottom: 50px;
+}
